@@ -2,18 +2,14 @@
 
 ## A. Scenario
 
-React is a hugely appreciated JavaScript library for frontend development. This doesn't mean that it's necessarily the best one (it's very good though), but it's very widely adopted and the concepts on which it is built appears in other frameworks as well. One of the core concepts of React is that it's component-based. Today we'll be exploring this topic by bulding a world clock SPA.
+One of the core concepts of React is that it's component-based. Today we'll be exploring this topic by bulding a world clock SPA.
 
 ## B. What you will be working on today
 
 In this exercise you will create an SPA with a set of independent clocks showing the time from different time zones.
 Each clock should be an independent component with its own timer.
 
-## C. Setup
-
-Use [`create-react-app`](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app) to create a new project called `salt-world-clocks`. You may use either `yarn` or `npm` as your package manager. 
-
-## D. Lab instructions
+## C. Instructions
 
 ### Application Architecture
 
@@ -31,23 +27,9 @@ The board component is a parent for all the clocks. You should pass in all the c
 
 The App component is a root component for your application. This is where you set up the configuration for all your clocks before you hand it over to the Board. Any other decorational info, e.g. page header, should also go into this component.
 
-| ![World Clocks](worldclocks.png) |
-| :------------------------------: |
-|    World Clocks architecture     |
-
 ### Mobile
 
 Exactly how you design your World Clocks app is up to you and your mob, but the app should be reactive and work on both mobile and desktop.
-
-<table>
-  <tr>
-    <td><img src="worldclocks-mobile.png"></td>
-    <td><img src="worldclocks-desktop.png"></td>
-  </tr>
-  <tr>
-    <td colspan="2">Example of mobile and desktop designs</td>
-  </tr>
-</table>
 
 ### JavaScript Date and Time
 
@@ -75,10 +57,6 @@ Just as with the Unix Epoch, we can create a new Date instance from an ISO strin
 #### Third Party Date Libraries
 
 The standard Date object in JavaScript can sometimes be a bit tricky to work with and there are third party libraries to help us. Previously, we used to use a library called [Moment](https://momentjs.com/) which was the de facto standard for advanced date management. Moment is however not being developed anymore (only maintained), and the developers of Moment themselves recommend using [other alternatives](https://momentjs.com/docs/#/-project-status/recommendations/). Feel free to use a third party date library if you want to.
-
-### No - we don't do TDD today
-
-Since you are moving into new ground with React, you don't have to write tests for this exercise. Instead you should concentrate on understanding the React concepts! You will however learn how to TDD with React very soon.
 
 ### Additional tasks
 
